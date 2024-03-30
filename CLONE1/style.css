@@ -1,0 +1,349 @@
+body{
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* background-color: #eeeff3; */
+    user-select: none;
+    background-image: url(./bg.png);
+    background-repeat: repeat;
+    background-size: contain;
+}
+#main{
+    height: 100vh;
+    display: grid;
+    padding: 20px;
+    grid-template-rows: 20% 80%;
+}
+
+#boxes2{
+    display: grid;
+    grid-template-columns: 50% 25% 25%;
+}
+
+
+#navoption:hover{
+    animation-name: TextAnim;
+    animation-duration: 1s;
+    color: #e3a6ac;
+    font-size: 20px;
+}
+
+
+
+
+/* BIG BLACK BOX */
+#BigBlackBox{
+    color: #d7d8dc;
+    padding: 0;
+    background-color: #000000;
+    margin: 15px;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    border-radius: 32px;
+    display: grid;
+    padding-left: 20px;
+    padding-right: 20px;
+    grid-template-rows: 25% 55% 25%;
+    position: relative;
+}
+#BigBlackBox:hover{
+    transition: 0.51s;
+    box-shadow: 10px 10px 50px 10px hsl(0, 0%, 0%);
+
+}
+#BigBlackBox img{
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    height: 400px;
+}
+#BigBlackBox h4{
+    font-size: 20px;
+}
+#BigBlackBox h1{
+    z-index: 2;
+}
+#BigBlackBox h1:hover{
+    animation-name: TextAnim;
+    animation-duration: 1s;
+    color: #d2d2e0;
+}
+@keyframes TextAnim {
+    0% {
+        margin-top: 0;
+    }
+    40% {
+        margin-top: -10px;
+    }
+    80% {
+        margin-top: 10px;
+    }
+    100% {
+        margin-top: 0px;
+    }
+}
+
+
+
+/* ALL PRODUCT BUTTON */
+#ProductButton{
+    z-index: 2;
+    background-color: rgb(68, 27, 27);
+    height: 40%;
+    width: 50%;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    background-color: #e2e3e7ea;
+    border-radius: 20px;
+    max-width: 300px;
+    box-shadow: 50px 0px 200px 50px dcb0c6;
+}
+
+
+
+.GoButton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-column-start: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    color: #000000;
+    font-weight: 900;
+    padding-bottom: 20px;
+
+}
+.shop{
+    color: rgb(99, 96, 96);
+    padding-left: 10%;
+}
+.AllProdu{
+    color: rgb(0, 0, 0);
+    padding: 0% 0% 0% 10%;
+    padding-bottom: 20px;
+}
+
+#butopt{
+    padding-top: 5px;
+    
+}
+
+
+#grey{
+    border-radius: 32px;
+    margin: 15px;
+    background-image: url(./planet.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    color: white;
+    
+}
+#grey:hover{
+    transition: 0.51s;
+    box-shadow: 10px 10px 100px 10px rgb(80, 132, 153);
+}
+
+#purple{
+    border-radius: 32px;
+    background-image: url(./aboutpng.jpg);
+    background-size: cover;
+    margin: 15px;
+    display: grid;
+    grid-template-rows: 20% 80%;
+    align-items: center;
+    align-content: center;
+    color: white;
+    position: relative;
+}
+
+#abtTop{
+    margin-left: 20px;
+    display: grid;
+    grid-template-columns: 75% 20%;
+    /* background-color: #c26464; */
+    /* border: 5px solid rgb(0, 0, 0); */
+}
+
+i{
+    font-size: 30px;
+    color: #ffffff;
+}
+
+
+
+
+#abtBottom{
+    height: 100%;
+    /* background-color: #85536c; */
+    position: absolute;
+    top: 70%;
+    text-align: center;
+    margin-left: 10px;
+}
+/* #abtBottom:hover{
+    animation-name: TextAnim;
+    animation-duration: 1s;
+} */
+
+#purple:hover{
+    transition: 0.51s;
+    box-shadow: 10px 10px 100px 10px #35270d;
+}
+#green{
+    border-radius: 32px;
+    background-image: url(./contact.jpg);
+    background-size: cover;
+    margin: 15px;
+    display: grid;
+    grid-template-rows: 20% 80%;
+    align-items: center;
+    align-content: center;
+    color: white;
+    position: relative;
+}
+#green:hover{
+    transition: 0.51s;
+    box-shadow: 10px 10px 100px 10px #ffffff;
+}
+
+/* NavBar   boxes1 */
+#boxes1{
+    /* background-color: rebeccapurple; */
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+#NavSection1{
+    display: flex;
+    align-items: center;
+    /* background-color: red; */
+    list-style: none;
+    padding-left: 20px;
+    position: relative;
+    
+}
+#NavSection1 img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    animation-name: rotates;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.elem{
+    margin-top: 20px;
+}
+
+@keyframes rotates {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+#navoption{
+    padding-left: 10px;
+    font-weight: 400;
+}
+
+#NavSection2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#buttons{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 300px;
+    width: 100%;
+    background-color: #eaeaeb;
+    padding: 8px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 60px 1px rgba(0, 0, 0, 0.068);
+    border: 1px solid rgba(0, 0, 0, 0.034);
+}
+#button{
+    padding: 10px;
+    min-width: 100px;
+    text-align: center;
+    border-radius: 12px;
+    font-weight: 900;
+}
+/* .userAuthL, .userAuthS{
+} */
+.userAuthS{
+    color: rgba(218, 216, 216, 0.904);
+    background-color: rgb(0, 0, 0);
+}
+
+
+
+
+#grey{
+    display: grid;
+    grid-template-rows: 30% 70%;
+    position: relative;
+    
+}
+.GreyOpt{
+    /* border: 1px solid black; */
+    /* background-color: red; */
+    position: relative;
+    align-self: center;
+}
+#TopGrey{
+    margin-left: 20px;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 80% 20%;
+}
+#TopGrey p{
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+}
+#BottomGrey{
+    top: 80%;
+    position: absolute;
+    margin-left: 20px;
+}
+
+
+
+
+@media screen and (max-width: 629px) {
+    #boxes2{
+        grid-template-columns: 100%;
+
+    }
+    #BigBlackBox img{
+        height: 250px;
+    }
+    #NavSection2{
+        display: none;
+    }
+    #BigBlackBox{
+        min-height: 400px;
+        margin-bottom: 50px;
+    }
+
+    #grey , #purple, #green{
+        min-height: 300px;
+    }
+    #grey{
+        grid-column-start: 1;
+    grid-column-end: 1;
+    color: white;
+    }
+    #ProductButton{
+        padding-top: 20px;
+        width: 100%;
+        height: 100%;
+        /* border: 1px solid black; */
+        box-shadow: 1px 1px 50px 1px rgba(0, 0, 0, 0.267);
+    }
+}
